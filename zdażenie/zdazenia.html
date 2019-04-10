@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button id="przycisk" >Pokaż</button>
+    <div id="blok"></div>
+<script>
+
+let elPrzycisk = document.getElementById('przycisk');
+let elBlok = document.getElementById('blok');
+
+
+elPrzycisk.addEventListener('click', function(){
+  elBlok.textContent += 'click';
+})
+
+elPrzycisk.addEventListener('mousedown', function(){
+  elBlok.textContent += 'naciśnięcie przycisku myszy';
+})
+
+elPrzycisk.addEventListener('mouseover', function(){
+  elBlok.textContent += 'najechanie myszką na przycisk';
+})
+
+elPrzycisk.addEventListener('mousemove', function(){
+  elBlok.textContent += 'poruszenie po elemencie';
+})
+
+elPrzycisk.addEventListener('mouseout', function(){
+  elBlok.textContent += 'opuszczenie przycisku';
+})
+
+elPrzycisk.addEventListener('dblclick', function(){
+  elBlok.textContent += 'podójne kliknięcie';
+})
+
+
+</script>
+  </body>
+</html>
